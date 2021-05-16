@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".BasicCalculator">
+
+
+    <TextView
+        android:id="@+id/txtResultBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/num_padding"
+        android:paddingTop="@dimen/num_padding"
+        android:paddingEnd="@dimen/num_padding"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/light_grey"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultBar">
+
+        <TextView
+            android:id="@+id/txtCalculations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/num_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LL1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            style="?android:attr/buttonBarStyle">
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_7"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_9"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_divide"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            style="?android:attr/buttonBarStyle">
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_multiply"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            style="?android:attr/buttonBarStyle">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/subtract"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_subtract"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            style="?android:attr/buttonBarStyle">
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_clear"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_equal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/b0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/button_padding"
+                android:layout_marginEnd="@dimen/button_padding"
+                android:backgroundTint="@color/grey"
+                android:text="@string/string_add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/num_size"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

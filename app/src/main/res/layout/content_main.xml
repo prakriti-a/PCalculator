@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/secondaryDarkColor"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_size"
+        android:padding="@dimen/text_padding"
+        android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/edtPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:digits="0123456789."
+        android:hint="@string/percentHint"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/text_size"/>
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPercent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:inputType="numberDecimal"
+        android:hint="@string/numberHint"
+        android:textSize="@dimen/text_size"
+        android:maxLength="10"
+        android:digits="0123456789."
+        android:textColor="@color/primaryTextColor"
+        />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="80dp"
+        android:padding="@dimen/text_padding"
+        android:text="@string/btn_result"
+        android:textSize="@dimen/text_size"
+        android:backgroundTint="@color/secondaryColor"
+        android:elevation="@dimen/elev"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalculate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="130dp"
+        android:layout_marginStart="130dp"
+        android:padding="@dimen/text_padding"
+        android:text="@string/clear"
+        android:textSize="@dimen/text_size"
+        android:backgroundTint="@color/secondaryColor"
+        android:elevation="@dimen/elev"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnClear"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/secondaryLightColor"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:text="@string/txt_result"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/btnBasicCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="@string/btn_nextPage"
+        android:textSize="@dimen/text_size"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColor"
+        android:elevation="@dimen/elev"/>
+
+
+</RelativeLayout>

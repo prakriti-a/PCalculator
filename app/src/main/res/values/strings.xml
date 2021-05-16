@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Multi Purpose Calculator</string>
+    <string name="basic_calc_app_name">Basic Calculator</string>
+
+    <string name="percentHint">Enter Percent here</string>
+    <string name="numberHint">Enter Value here</string>
+    <string name="btn_result">Calculate Result</string>
+    <string name="title">Percent Calculator</string>
+    <string name="btn_nextPage">GO TO BASIC CALCULATOR</string>
+    <string name="txt_result">RESULT</string>
+    <string name="clear">CLEAR</string>
+
+    <string name="string_7">7</string>
+    <string name="string_8">8</string>
+    <string name="string_9">9</string>
+    <string name="string_divide">/</string>
+    <string name="string_4">4</string>
+    <string name="string_5">5</string>
+    <string name="string_6">6</string>
+    <string name="string_multiply">*</string>
+    <string name="string_1">1</string>
+    <string name="string_2">2</string>
+    <string name="string_3">3</string>
+    <string name="string_subtract">-</string>
+    <string name="string_clear">C</string>
+    <string name="string_equal">=</string>
+    <string name="string_0">0</string>
+    <string name="string_add">+</string>
+
+</resources>
